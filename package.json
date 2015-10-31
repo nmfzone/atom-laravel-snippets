@@ -1,0 +1,15 @@
+{
+  "name": "atom-laravel-snippets",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Laravel code snippets for Atom Text Editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmfzone/atom-laravel-snippets"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}
