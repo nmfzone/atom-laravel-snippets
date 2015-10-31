@@ -1,5 +1,5 @@
 {
-  "name": "atom-laravel-snippets",
+  "name": "laravel-snippets",
   "version": "1.0.0",
   "private": false,
   "description": "Laravel code snippets for Atom Text Editor",
