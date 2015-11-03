@@ -1,35 +1,41 @@
 '.php':
-  'Table Increment':
+  'Increment Column':
     'prefix': 'mig:inc'
     'body': """$table->increments('id');"""
-  'Table String':
+  'String Column':
     'prefix': 'mig:str'
     'body': """$table->string('');"""
-  'Table Char':
+  'Char Column':
     'prefix': 'mig:char'
     'body': """$table->char('');"""
-  'Table Integer':
+  'Integer Column':
     'prefix': 'mig:int'
     'body': """$table->integer('');"""
-  'Table Foreign':
+  'Boolean Column':
+    'prefix': 'mig:bool'
+    'body': """$table->boolean('');"""
+  'Foreign Column':
     'prefix': 'mig:frg'
-    'body': """$table->foreign('', '');"""
-  'Table Text':
+    'body': """
+              $table->integer('')->unsigned();
+              $table->foreign('')->references('id')->on('')->onDelete('cascade');
+            """
+  'Text Column':
     'prefix': 'mig:txt'
     'body': """$table->text('');"""
-  'Table Text Medium':
+  'Medium Text Column':
     'prefix': 'mig:txt:med'
     'body': """$table->mediumText('');"""
-  'Table Text Long':
+  'Long Text Column':
     'prefix': 'mig:txt:long'
     'body': """$table->longText('');"""
-  'Table Timestamp':
+  'Timestamp Column':
     'prefix': 'mig:time'
     'body': """$table->timestamp('');"""
-  'Table Timestamps':
+  'Timestamps Column':
     'prefix': 'mig:times'
     'body': """$table->timestamps();"""
-  'Table Remember Token':
+  'Remember Token Column':
     'prefix': 'mig:token'
     'body': """$table->rememberToken();"""
   'Migration Schema':
